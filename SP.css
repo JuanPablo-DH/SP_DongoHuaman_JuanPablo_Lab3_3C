@@ -1,0 +1,164 @@
+.eBody {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.eForm {
+    display: flex;
+    height: 97%;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3), -5px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.eTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.eLabel {
+    color: black;
+    margin-right: 5px;
+}
+
+
+
+
+#formLista {
+    display: flex;
+}
+
+.ePanelTable {
+    height: 264px;
+    overflow: auto;
+    background-color: rgba(128, 128, 128, 0.472);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+#formAbm {
+    display: none;
+}
+
+.ePanelTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    justify-content: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.eTextBox {
+    width: 300px;
+    color: black;
+}
+
+.ePanelComboBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    justify-content: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.eComboBox {
+    width: 208px;
+    height: 23px;
+    color: black;
+}
+
+.ePanelButtons {
+    display: flex;
+    width: 600px;
+    margin: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.eButton {
+    width: 200px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+.ePanelSpinner {
+    
+    display: flex;
+    height: 60px;
+    width: 650px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.eSpinner {
+    border: 4px solid grey;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: spin 0s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.eRes {
+    font-size: 35px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3)
+}

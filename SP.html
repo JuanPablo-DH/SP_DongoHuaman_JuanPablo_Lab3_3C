@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="SP.css">
+</head>
+<body class="eBody">
+    <div id="formAbm" class="eForm">
+        
+        <div class="eTitulo">
+            <label class="eLabel" style="text-decoration: underline;">Juan Pablo, Dongo Huaman</label>
+            <label class="eLabel" style="text-decoration: underline;">Labo III - Div. 3°C</label>
+            <label class="eLabel" style="text-decoration: underline;">Segundo Parcial</label>
+        </div>
+        <div class="eTitulo" style="margin-top: 15px;">
+            <label id="formAbmTitulo" class="eLabel" >Formulario ABM</label>
+        </div>
+        <div id="inputId" class="ePanelTextBox">
+            <label class="eLabel">ID</label>
+            <input class="eTextBox" id="txtId" type="text">
+        </div>
+        <div id="inputNombre" class="ePanelTextBox">
+            <label class="eLabel">Nombre</label>
+            <input class="eTextBox" id="txtNombre" type="text">
+        </div>
+        <div id="inputApellido" class="ePanelTextBox">
+            <label class="eLabel">Apellido</label>
+            <input class="eTextBox" id="txtApellido" type="text">
+        </div>
+        <div id="inputEdad" class="ePanelTextBox">
+            <label class="eLabel">Edad</label>
+            <input class="eTextBox" id="txtEdad" type="text">
+        </div>
+        <div id="inputTipo" class="ePanelComboBox">
+            <label class="eLabel">Tipo</label>
+            <select id="comboxTipo" class="eComboBox">
+                <option value="default" selected>Seleccionar</option>
+                <option value="futbolista">Futbolista</option>
+                <option value="profesional">Profesional</option>
+            </select>
+        </div>
+        
+        <div id="inputEquipo" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Equipo</label>
+            <input class="eTextBox" id="txtEquipo" type="text">
+        </div>
+        <div id="inputPosicion" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Posicion</label>
+            <input class="eTextBox" id="txtPosicion" type="text">
+        </div>
+        <div id="inputCantidadGoles" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Cantidad de Goles</label>
+            <input class="eTextBox" id="txtCantidadGoles" type="text">
+        </div>
+        <div id="inputTitulo" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Titulo</label>
+            <input class="eTextBox" id="txtTitulo" type="text">
+        </div>
+        <div id="inputFacultad" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Facultad</label>
+            <input class="eTextBox" id="txtFacultad" type="text">
+        </div>
+        <div id="inputAñoGraduacion" class="ePanelTextBox" style="display: none;">
+            <label class="eLabel">Año Graduacion</label>
+            <input class="eTextBox" id="txtAñoGraduacion" type="text">
+        </div>
+        <div class="ePanelButtons">
+            <input id="btnAceptar" class="eButton" type="button" value="Aceptar">
+            <input id="btnCancelar" class="eButton" type="button" value="Cancelar">
+        </div>
+        <div class="ePanelSpinner" style="justify-content: center; align-items: center;">
+            <div id="formAbmSpinner" class="eSpinner"></div>
+            <div id="formAbmRes" class="eRes"></div>
+        </div>
+    </div>
+    <div id="formLista" class="eForm">
+        <div class="eTitulo">
+            <label class="eLabel" style="text-decoration: underline;">Juan Pablo, Dongo Huaman</label>
+            <label class="eLabel" style="text-decoration: underline;">Labo III - Div. 3°C</label>
+            <label class="eLabel" style="text-decoration: underline;">Segundo Parcial</label>
+        </div>
+        <div class="eTitulo" style="margin-top: 15px;">
+            <label class="eLabel">Formulario Lista</label>
+        </div>
+        <div class="ePanelSpinner" style="justify-content: center; align-items: center;">
+            <div id="formListaSpinner" class="eSpinner"></div>
+            <div id="formListaRes" class="eRes"></div>
+        </div>
+        <div class="ePanelTable">
+            <table id="tabla">
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>EDAD</th>
+                <th>EQUIPO</th>
+                <th>POSICION</th>
+                <th>CANTIDAD GOLES</th>
+                <th>TITULO</th>
+                <th>FACULTAD</th>
+                <th>AÑO GRADUACION</th>
+                <th>MODIFICAR</th>
+                <th>ELIMINAR</th>
+            </table>
+        </div>
+        <div class="ePanelButtons">
+            <input id="btnAgregar" class="eButton" type="button" value="Agregar">
+        </div>
+    </div>
+    <script src="SP.js"></script>
+</body>
+</html>
+
+
