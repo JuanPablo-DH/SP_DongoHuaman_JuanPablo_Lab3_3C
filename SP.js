@@ -894,19 +894,18 @@ class Consulta
 
                 response.text()
                 .then((texto) => {
-
-                    Spinner.ocultar(ID_SPINNER);
-                    Tabla.modificar(p_entidad);
-                    Res.mostrar_ok(ID_RES, texto);
-                });
-            })
-            .catch((response) => {
-
-                response.text()
-                .then((texto) => {
-
-                    Spinner.ocultar(ID_SPINNER);
-                    Res.mostrar_error(ID_RES, texto);
+                    
+                    if(response.ok)
+                    {
+                        Spinner.ocultar(ID_SPINNER);
+                        Tabla.modificar(p_entidad);
+                        Res.mostrar_ok(ID_RES, texto);
+                    }
+                    else
+                    {
+                        Spinner.ocultar(ID_SPINNER);
+                        Res.mostrar_error(ID_RES, texto);
+                    }
                 });
             })
             .finally((x) => {
